@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creatives — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="creatives.html" class="active">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="section-label reveal">Creative Work</div>
+    <h1 class="page-title reveal">Designs, posters &amp;<br/><span class="highlight">brand collateral.</span></h1>
+  </section>
+
+  <section class="graphic-section">
+    <div class="filter-tabs reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="logo">Logo</button>
+      <button class="filter-btn" data-filter="poster">Event Posters</button>
+      <button class="filter-btn" data-filter="social">Social Media</button>
+    </div>
+
+    <div class="graphic-grid">
+
+      <!-- IMAGE 1: Logo Design -->
+      <div class="graphic-card reveal" data-category="logo">
+        <div class="card-img placeholder-img p1" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_1.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">Logo · 1st Place</span>
+        </div>
+        <div class="card-info">
+          <h3>RLAC Commerce Society — Logo</h3>
+          <p>Won 1st place in the Logo Making Competition organized by the Commerce Society of Ram Lal Anand College, showcasing creativity and design proficiency.</p>
+          <div class="card-tags">
+            <span class="tag">Logo Design</span>
+            <span class="tag">Branding</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE 2: Event Poster -->
+      <div class="graphic-card reveal" data-category="poster">
+        <div class="card-img placeholder-img p2" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_2.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">Event Poster</span>
+        </div>
+        <div class="card-info">
+          <h3>K-Street — Flagship Event Poster</h3>
+          <p>Promotional design for K-Street, one of the Commerce Society's flagship events drawing 500+ participants.</p>
+          <div class="card-tags">
+            <span class="tag">Event Branding</span>
+            <span class="tag">Poster Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE 3: Event Poster -->
+      <div class="graphic-card reveal" data-category="poster">
+        <div class="card-img placeholder-img p3" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_3.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">Event Poster</span>
+        </div>
+        <div class="card-info">
+          <h3>Money Mayhem — Campaign Design</h3>
+          <p>Visual identity and promotional collateral for Money Mayhem, designed to maximize registrations and engagement.</p>
+          <div class="card-tags">
+            <span class="tag">Campaign Design</span>
+            <span class="tag">Promotion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE 4: Quiz Society -->
+      <div class="graphic-card reveal" data-category="poster">
+        <div class="card-img placeholder-img p4" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_4.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">Event Poster</span>
+        </div>
+        <div class="card-info">
+          <h3>Qurushektra — Quiz Society Poster</h3>
+          <p>Event collateral for Qurushektra, one of 9+ high-impact quizzes organized under QURU, RLAC.</p>
+          <div class="card-tags">
+            <span class="tag">Event Design</span>
+            <span class="tag">Quiz Society</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE 5: NSS Graphics -->
+      <div class="graphic-card reveal" data-category="social">
+        <div class="card-img placeholder-img p5" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_5.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">NSS Campaign</span>
+        </div>
+        <div class="card-info">
+          <h3>NSS — Visual Communication</h3>
+          <p>Designed visual communication materials for NSS campaigns as part of the Graphics Department — covering cleanliness drives and Youth Day campaigns.</p>
+          <div class="card-tags">
+            <span class="tag">Social Cause</span>
+            <span class="tag">Graphics</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGE 6: Social Media -->
+      <div class="graphic-card reveal" data-category="social">
+        <div class="card-img placeholder-img p6" style="background-image: url('REPLACE_WITH_YOUR_IMAGE_6.jpg'); background-size: cover; background-position: center;">
+          <span class="card-category">Social Media</span>
+        </div>
+        <div class="card-info">
+          <h3>Commerce Society — Digital Presence</h3>
+          <p>Strategic social media content and brand communication design that elevated the society's campus presence.</p>
+          <div class="card-tags">
+            <span class="tag">Social Media</span>
+            <span class="tag">Content</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO ADD IMAGES -->
+  <section style="padding: 0 6% 5rem;">
+    <div class="reveal" style="background: var(--surface); border: 1px dashed var(--border); border-radius: 8px; padding: 2rem; text-align: center; color: var(--muted); font-size: 0.9rem;">
+      💡 <strong style="color: var(--text);">Apni poster/logo images yahan add karo:</strong> har card mein <code style="color: var(--accent);">REPLACE_WITH_YOUR_IMAGE_1.jpg</code> jaisa text dikh rahi hai — usko apni image file ke naam se replace kar do (image ko isi folder mein daal dena, jaise <code style="color: var(--accent);">logo-design.jpg</code>).
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachinnawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

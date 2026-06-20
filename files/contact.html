@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="section-label reveal">Get In Touch</div>
+    <h1 class="page-title reveal">Let's work<br/><span class="highlight">together.</span></h1>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info reveal">
+      <h2>Have a project in mind?</h2>
+      <p>Whether it's brand strategy, event marketing, design collateral, or just a conversation about opportunities — I'm always open to connecting.</p>
+
+      <div class="contact-links">
+        <a href="mailto:sachinnawadia@gmail.com" class="contact-link-item">
+          <span class="icon">✉️</span>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">sachinnawadia@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+916207451104" class="contact-link-item">
+          <span class="icon">📞</span>
+          <div>
+            <div class="label">Phone</div>
+            <div class="value">+91-6207451104</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/sachinnawadia-37500527b" target="_blank" class="contact-link-item">
+          <span class="icon">💼</span>
+          <div>
+            <div class="label">LinkedIn</div>
+            <div class="value">linkedin.com/in/sachinnawadia</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Rahul Verma" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="rahul@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">What do you need?</label>
+          <select id="subject">
+            <option value="">Select a topic...</option>
+            <option value="marketing">Marketing / Brand Strategy</option>
+            <option value="design">Design / Creative Work</option>
+            <option value="collab">Event Collaboration</option>
+            <option value="job">Job Opportunity</option>
+            <option value="other">Other / Just saying hi</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Tell me more</label>
+          <textarea id="message" placeholder="Describe your project, opportunity, or just say hi!" required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-primary" style="width:100%;text-align:center;border:none;cursor:pointer;">
+            Send Message →
+          </button>
+        </div>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        ✅ Message sent! I'll get back to you soon.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachinnawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

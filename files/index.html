@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sachin Nawadia — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero hero-with-photo">
+    <div class="hero-text-col">
+      <div class="hero-tag reveal">Marketing & Creative</div>
+      <h1 class="hero-title reveal">
+        Hi, I'm Sachin<br/>
+        <span class="highlight">Marketing Guy</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Brand Building · Campaigns · Research · Finance · Graphics
+      </p>
+      <div class="hero-btns reveal">
+        <a href="projects.html" class="btn-primary">View Projects</a>
+        <a href="creatives.html" class="btn-ghost">See Creatives</a>
+        <a href="contact.html" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-photo-col reveal">
+      <div class="hero-photo-wrap">
+        <img src="sachin-photo.jpg" alt="Sachin Nawadia" class="hero-photo"/>
+        <div class="hero-photo-decor"></div>
+      </div>
+    </div>
+
+    <div class="hero-marquee">
+      <div class="marquee-track">
+        <span>Brand Strategy</span><span>·</span>
+        <span>Market Research</span><span>·</span>
+        <span>Campaign Management</span><span>·</span>
+        <span>Content Strategy</span><span>·</span>
+        <span>Event Leadership</span><span>·</span>
+        <span>Graphic Design</span><span>·</span>
+        <span>Brand Strategy</span><span>·</span>
+        <span>Market Research</span><span>·</span>
+        <span>Campaign Management</span><span>·</span>
+        <span>Content Strategy</span><span>·</span>
+        <span>Event Leadership</span><span>·</span>
+        <span>Graphic Design</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+    <div class="section-label reveal">Featured Projects</div>
+    <h2 class="section-title reveal">What I've built<span class="dot">.</span></h2>
+    <div class="work-grid">
+      <div class="work-card reveal" onclick="location.href='projects.html'">
+        <div class="card-img placeholder-img p1">
+          <span class="card-category">Risk Analysis</span>
+        </div>
+        <div class="card-info">
+          <h3>Geldium Delinquency Risk Report</h3>
+          <p>End-to-end credit delinquency risk analysis — risk segmentation, predictive insights, and strategic recommendations.</p>
+        </div>
+      </div>
+      <div class="work-card reveal" onclick="location.href='projects.html'">
+        <div class="card-img placeholder-img p3">
+          <span class="card-category">Industry Analysis</span>
+        </div>
+        <div class="card-info">
+          <h3>India Quick Commerce — Market Warfare 2026</h3>
+          <p>Full competitive analysis of Blinkit, Zepto, Swiggy Instamart, and Flipkart Minutes with strategic recommendations.</p>
+        </div>
+      </div>
+      <div class="work-card reveal" onclick="location.href='projects.html'">
+        <div class="card-img placeholder-img p4">
+          <span class="card-category">Brand Audit</span>
+        </div>
+        <div class="card-info">
+          <h3>Dettol Marketing Strategy Audit</h3>
+          <p>Deep-dive brand audit — STP analysis, 4Ps marketing mix, campaign analysis, and an original growth blueprint.</p>
+        </div>
+      </div>
+    </div>
+    <div class="see-all reveal">
+      <a href="projects.html" class="btn-ghost">All Projects →</a>
+    </div>
+  </section>
+
+  <!-- FEATURED CREATIVES -->
+  <section class="featured">
+    <div class="section-label reveal">Featured Creatives</div>
+    <h2 class="section-title reveal">Designs I've made<span class="dot">.</span></h2>
+    <div class="work-grid">
+      <div class="work-card reveal" onclick="location.href='creatives.html'">
+        <div class="card-img placeholder-img p1">
+          <span class="card-category">Logo · 1st Place</span>
+        </div>
+        <div class="card-info">
+          <h3>RLAC Commerce Society — Logo</h3>
+          <p>Won 1st place in the Logo Making Competition organized by the Commerce Society of RLAC.</p>
+        </div>
+      </div>
+      <div class="work-card reveal" onclick="location.href='creatives.html'">
+        <div class="card-img placeholder-img p2">
+          <span class="card-category">Event Poster</span>
+        </div>
+        <div class="card-info">
+          <h3>K-Street — Flagship Event Poster</h3>
+          <p>Promotional design for one of the Commerce Society's flagship events drawing 500+ participants.</p>
+        </div>
+      </div>
+      <div class="work-card reveal" onclick="location.href='creatives.html'">
+        <div class="card-img placeholder-img p5">
+          <span class="card-category">NSS Campaign</span>
+        </div>
+        <div class="card-info">
+          <h3>NSS — Visual Communication</h3>
+          <p>Designed visual communication materials for NSS hygiene and Youth Day campaigns.</p>
+        </div>
+      </div>
+    </div>
+    <div class="see-all reveal">
+      <a href="creatives.html" class="btn-ghost">All Creatives →</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <div class="section-label reveal">What I Bring</div>
+    <div class="skills-grid reveal">
+      <div class="skill-item">
+        <div class="skill-icon">📈</div>
+        <h4>Marketing</h4>
+        <p>Brand Strategy, Campaign Management, Digital Marketing</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🔍</div>
+        <h4>Market Research</h4>
+        <p>Data Analysis, Excel, Power BI, Consumer Insights</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🎨</div>
+        <h4>Creative & Design</h4>
+        <p>Logo Design, Posters, Event Collaterals, Content</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🤝</div>
+        <h4>Leadership & HR</h4>
+        <p>Team Management, Recruitment, Event Coordination</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">💰</div>
+        <h4>Finance & Accounting</h4>
+        <p>Financial Analysis, Tally, Wealth Management, Risk Analysis</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">🗣️</div>
+        <h4>Communication</h4>
+        <p>Public Speaking, Storytelling, Stakeholder Management</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">📊</div>
+        <h4>Strategy & Analytics</h4>
+        <p>SWOT, STP Analysis, Case Studies, Competitive Benchmarking</p>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">⚙️</div>
+        <h4>Tools</h4>
+        <p>MS Excel, Power BI, Canva, Google Workspace</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachinnawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

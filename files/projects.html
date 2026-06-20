@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <div class="section-label reveal">My Work</div>
+    <h1 class="page-title reveal">Projects &amp;<br/><span class="highlight">internships.</span></h1>
+  </section>
+
+  <section class="projects-section">
+    <div class="filter-tabs reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="risk">Risk & Finance</button>
+      <button class="filter-btn" data-filter="market">Market Research</button>
+      <button class="filter-btn" data-filter="case">Case Studies</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- PROJECT 1: Geldium (Report + PPT) -->
+      <div class="project-card reveal" data-category="risk">
+        <div class="card-img placeholder-img p1">
+          <span class="card-category">Risk Analysis</span>
+        </div>
+        <div class="card-info">
+          <h3>Geldium Delinquency Risk Report</h3>
+          <p>End-to-end credit delinquency risk analysis project — covering risk segmentation, predictive insights, and strategic recommendations to reduce default rates. Delivered as a full report and an executive presentation.</p>
+          <div class="card-tags">
+            <span class="tag">Risk Analysis</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Data-Driven</span>
+          </div>
+          <div class="project-links">
+            <a href="files/Geldium_Delinquency_Risk_Report.docx" class="project-link" download>📄 Full Report (.docx)</a>
+            <a href="files/Geldium_Delinquency_Presentation.pptx" class="project-link" download>📊 Presentation (.pptx)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Market Intelligence Dashboard -->
+      <div class="project-card reveal" data-category="market">
+        <div class="card-img placeholder-img p2">
+          <span class="card-category">Dashboard</span>
+        </div>
+        <div class="card-info">
+          <h3>B2B Market Intelligence Dashboard</h3>
+          <p>Interactive market intelligence dashboard built from raw company data — visualizing key metrics, trends, and competitive positioning for strategic decision-making.</p>
+          <div class="card-tags">
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Dashboard</span>
+            <span class="tag">Strategy</span>
+          </div>
+          <div class="project-links">
+            <a href="files/market_intelligence_dashboard.html" class="project-link" target="_blank">🌐 View Live Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Quick Commerce Analysis -->
+      <div class="project-card reveal" data-category="market">
+        <div class="card-img placeholder-img p3">
+          <span class="card-category">Industry Analysis</span>
+        </div>
+        <div class="card-info">
+          <h3>India Quick Commerce — Market Warfare 2026</h3>
+          <p>Full competitive analysis of Blinkit, Zepto, Swiggy Instamart, and Flipkart Minutes — covering market sizing, financials, unit economics, SWOT, Porter's Five Forces, and strategic recommendations.</p>
+          <div class="card-tags">
+            <span class="tag">Competitive Analysis</span>
+            <span class="tag">Q-Commerce</span>
+            <span class="tag">Strategy</span>
+          </div>
+          <div class="project-links">
+            <a href="files/Quick_Commerce_Competitor_Analysis.pdf" class="project-link" target="_blank">📄 View Full Report (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Dettol Marketing Analysis -->
+      <div class="project-card reveal" data-category="case">
+        <div class="card-img placeholder-img p4">
+          <span class="card-category">Brand Audit</span>
+        </div>
+        <div class="card-info">
+          <h3>Dettol Marketing Strategy Audit & Growth Blueprint</h3>
+          <p>Deep-dive brand audit of Dettol — STP analysis, 4Ps marketing mix, campaign analysis, SWOT, gap analysis, and an original future campaign strategy proposal ("Mera Gaon, Swachh Gaon").</p>
+          <div class="card-tags">
+            <span class="tag">Brand Strategy</span>
+            <span class="tag">FMCG</span>
+            <span class="tag">Campaign Design</span>
+          </div>
+          <div class="project-links">
+            <a href="files/Dettol_Marketing_Growth_Analysis.pdf" class="project-link" target="_blank">📄 View Full Report (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 5: McDonald's Analysis -->
+      <div class="project-card reveal" data-category="case">
+        <div class="card-img placeholder-img p5">
+          <span class="card-category">Case Study</span>
+        </div>
+        <div class="card-info">
+          <h3>McDonald's Marketing Analysis</h3>
+          <p>Comprehensive case study on McDonald's marketing strategy — examining brand positioning, market segmentation, and the key success factors behind its global dominance.</p>
+          <div class="card-tags">
+            <span class="tag">Case Study</span>
+            <span class="tag">Marketing</span>
+            <span class="tag">QSR</span>
+          </div>
+          <div class="project-links">
+            <a href="files/McDonalds_Marketing_Analysis.pptx" class="project-link" download>📊 View Presentation (.pptx)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 6: Xerox Downfall -->
+      <div class="project-card reveal" data-category="case">
+        <div class="card-img placeholder-img p6">
+          <span class="card-category">Case Study</span>
+        </div>
+        <div class="card-info">
+          <h3>The Rise and Fall of Xerox</h3>
+          <p>Case presentation tracing Xerox's journey from market-dominating innovator to decline — analyzing market myopia, missed innovation opportunities, and lessons in strategic adaptability.</p>
+          <div class="card-tags">
+            <span class="tag">Case Study</span>
+            <span class="tag">Market Myopia</span>
+            <span class="tag">Strategy</span>
+          </div>
+          <div class="project-links">
+            <a href="files/Downfall_of_Xerox.pdf" class="project-link" target="_blank">📄 View Full Report (PDF)</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachinnawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
