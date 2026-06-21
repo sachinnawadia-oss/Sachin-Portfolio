@@ -45,7 +45,31 @@ function initContactForm() {
 function initFilter() {
   const btns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.project-card');
-  if (!btns.length) return;
+  if (!btns.length || !cards.length) return;
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+          setTimeout(() => card.style.opacity = '1', 10);
+        } else {
+          card.style.opacity = '0';
+          setTimeout(() => card.style.display = 'none', 300);
+        }
+      });
+    });
+  });
+}
+
+// ===== GRAPHIC/CREATIVE FILTER (creatives.html) =====
+function initGraphicFilter() {
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.graphic-card');
+  if (!btns.length || !cards.length) return;
 
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -70,4 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initContactForm();
   initFilter();
+  initGraphicFilter();
 });

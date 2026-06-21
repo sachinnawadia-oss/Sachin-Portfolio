@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>McDonald's Marketing Analysis — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="detail-hero">
+    <a href="projects.html" class="detail-back">&larr; Back to Projects</a>
+
+    <div class="detail-tag">🍔 Case Study</div>
+    <h1 class="detail-title">McDonald's Marketing Analysis</h1>
+
+    <div class="detail-preview">
+      <img src="thumb-mcdonalds.jpg" alt="McDonald's Marketing Analysis preview" />
+    </div>
+
+    <p class="detail-summary">A comprehensive case study on McDonald's global marketing strategy — examining how consistent brand positioning, localized menu adaptation, and sharp market segmentation have sustained its dominance across decades and geographies.</p>
+
+    <h2 class="detail-section-heading">Key Highlights</h2>
+    <ul class="detail-features">
+      <li>Brand positioning analysis across global and local markets</li>
+      <li>Market segmentation and target audience breakdown</li>
+      <li>Review of McDonald's adaptive menu and pricing strategy by region</li>
+      <li>Key success factors behind sustained QSR market leadership</li>
+      <li>Lessons applicable to other consumer brands entering new markets</li>
+    </ul>
+
+    <h2 class="detail-section-heading">Tools &amp; Skills</h2>
+    <div class="detail-tools">
+      <span>Case Study</span>
+      <span>Brand Positioning</span>
+      <span>Market Segmentation</span>
+      <span>QSR Strategy</span>
+    </div>
+
+    <div class="detail-actions">
+      <a href="files/McDonalds_Marketing_Analysis.pptx" class="btn-primary" target="_blank">📊 View Presentation</a>
+      <a href="files/McDonalds_Marketing_Analysis.pptx" class="btn-ghost" download>⬇ Download PPTX</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachin-nawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

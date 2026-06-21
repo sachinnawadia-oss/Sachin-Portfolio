@@ -749,3 +749,111 @@ ul { list-style: none; }
   color: var(--accent2);
   border: 1px solid rgba(124,92,191,0.25);
 }
+
+/* ===== PROJECT DETAIL PAGE ===== */
+.detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.detail-back:hover { border-color: var(--accent); color: var(--accent); }
+
+.detail-hero { padding: 6rem 6% 2rem; max-width: 1000px; margin: 0 auto; }
+
+.detail-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.detail-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.detail-preview {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  margin-bottom: 2rem;
+}
+.detail-preview img {
+  width: 100%;
+  display: block;
+}
+
+.detail-summary {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+}
+
+.detail-section-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.detail-features {
+  list-style: none;
+  margin-bottom: 2.5rem;
+  display: grid;
+  gap: 0.65rem;
+}
+.detail-features li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.96rem;
+}
+.detail-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.detail-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.detail-tools span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  background: rgba(124,92,191,0.12);
+  color: var(--accent2);
+  border: 1px solid rgba(124,92,191,0.25);
+}
+
+.detail-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; }

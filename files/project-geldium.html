@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geldium Delinquency Risk Report — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="detail-hero">
+    <a href="projects.html" class="detail-back">&larr; Back to Projects</a>
+
+    <div class="detail-tag">📊 Risk Analysis</div>
+    <h1 class="detail-title">Geldium Delinquency Risk Report</h1>
+
+    <div class="detail-preview">
+      <img src="thumb-geldium-report.jpg" alt="Geldium Delinquency Risk Report preview" />
+    </div>
+
+    <p class="detail-summary">An end-to-end credit delinquency risk analysis project for Geldium Financial Services — combining exploratory data analysis, a logistic regression model, and a proactive collections strategy framework to help the business identify at-risk customers before they default.</p>
+
+    <h2 class="detail-section-heading">Key Highlights</h2>
+    <ul class="detail-features">
+      <li>Exploratory Data Analysis (EDA) on 500 customer records across 19 features</li>
+      <li>Logistic Regression model to predict delinquency risk</li>
+      <li>Identified poor payment history as the strongest predictor of future delinquency</li>
+      <li>Found high credit utilisation (60–80%) linked to a 1.51× increase in delinquency rate</li>
+      <li>Flagged high debt-to-income ratio (40%+) as a key structural affordability signal</li>
+      <li>Delivered both a full written report and an executive presentation deck</li>
+      <li>Included a Responsible AI framework for fair, transparent risk scoring</li>
+    </ul>
+
+    <h2 class="detail-section-heading">Tools &amp; Skills</h2>
+    <div class="detail-tools">
+      <span>Data Analysis</span>
+      <span>Logistic Regression</span>
+      <span>Risk Modelling</span>
+      <span>MS Excel</span>
+      <span>Power BI</span>
+      <span>Strategic Recommendations</span>
+    </div>
+
+    <div class="detail-actions">
+      <a href="files/Geldium_Delinquency_Risk_Report.docx" class="btn-primary" target="_blank">📄 View Report</a>
+      <a href="files/Geldium_Delinquency_Presentation.pptx" class="btn-ghost" target="_blank">📊 View Presentation</a>
+      <a href="files/Geldium_Delinquency_Risk_Report.docx" class="btn-ghost" download>⬇ Download Report</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachin-nawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

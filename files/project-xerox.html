@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Rise and Fall of Xerox — Sachin Nawadia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">SN<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="creatives.html">Creatives</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+      <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+      <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="creatives.html" onclick="toggleMenu()">Creatives</a></li>
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="detail-hero">
+    <a href="projects.html" class="detail-back">&larr; Back to Projects</a>
+
+    <div class="detail-tag">📉 Case Study</div>
+    <h1 class="detail-title">The Rise and Fall of Xerox</h1>
+
+    <div class="detail-preview">
+      <img src="thumb-xerox.jpg" alt="The Rise and Fall of Xerox preview" />
+    </div>
+
+    <p class="detail-summary">A case presentation tracing Xerox's full journey — from a market-dominating innovator that invented core technologies later commercialized by others, to a cautionary tale of market myopia and missed innovation opportunities.</p>
+
+    <h2 class="detail-section-heading">Key Highlights</h2>
+    <ul class="detail-features">
+      <li>Evolution roadmap from Xerox's startup phase (1906–1959) to the present era</li>
+      <li>Analysis of the growth phase and innovation expansion (1960s–1980s)</li>
+      <li>Deep dive into the causes of the 1990–2000 decline</li>
+      <li>Examination of market myopia and missed innovation bets (e.g. PARC research)</li>
+      <li>Strategic lessons in adaptability for established market leaders</li>
+    </ul>
+
+    <h2 class="detail-section-heading">Tools &amp; Skills</h2>
+    <div class="detail-tools">
+      <span>Case Study</span>
+      <span>Market Myopia</span>
+      <span>Strategic Adaptability</span>
+      <span>Business History</span>
+    </div>
+
+    <div class="detail-actions">
+      <a href="files/Downfall_of_Xerox.pdf" class="btn-primary" target="_blank">📄 View Full Report</a>
+      <a href="files/Downfall_of_Xerox.pdf" class="btn-ghost" download>⬇ Download PDF</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Sachin Nawadia · Made with passion</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sachin-nawadia-37500527b" target="_blank">LinkedIn</a>
+      <a href="mailto:sachinnawadia@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
